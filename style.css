@@ -6,11 +6,14 @@
 }
 
 :root {
-    --primary-color: #691B9A;
+    --primary-color: #fd7e14;
+    --prime-color: #ef9043;
     --secondary-color: #E62E7E;
     --shadow: rgb(157 157 157 / 20%) 0px 4px 10px;
     --heading-color: #363A45;
     --bg: #fff;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 252, 240, 1) 51%, rgba(255, 250, 232, 1) 53%, rgba(255, 239, 204, 1) 87%, rgba(255, 203, 97, 1) 100%);
 }
 
 .color-p {
@@ -90,9 +93,9 @@ h2 {
 } */
 
 .btn-primary {
-    background: var(--primary-color);
+    background: var(--prime-color);
     border-radius: 5px;
-    box-shadow: var(--primary-color) 0 10px 20px -10px;
+    box-shadow: var(--prime-color) 0 10px 20px -10px;
     box-sizing: border-box;
     color: #FFFFFF !important;
     cursor: pointer;
@@ -133,20 +136,21 @@ nav {
 }
 
 .container h3 {
-    margin-right: 330px;
+    margin-right: 770px;
     margin-bottom: 8px;
     font-size: large;
+    margin-left: 100px;
 }
 
-.btn-login,
-.btn-login:hover {
+.btn-trial,
+.btn-trial:hover {
     margin-right: 1 0px;
     border: none;
     padding: 14px 24px;
     gap: 10px;
     width: 128px;
-    height: 18px;
-    background: #5A4BDA;
+    height: 60px;
+    background: var(--prime-color);
     color: #fff;
     border-radius: 8px;
     font-style: normal;
@@ -155,22 +159,19 @@ nav {
     line-height: 19px;
 }
 
-.btn-trail,
+
+/*.btn-trail,
 .btn-trial {
-    margin-left: 10px;
+    background-color: #f4511e;
     border: none;
-    padding: 14px 24px;
-    gap: 10px;
-    width: 118px;
-    height: 58px;
-    background: #5A4BDA;
-    color: #fff;
-    border-radius: 8px;
-    font-style: normal;
-    font-weight: 700;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
     font-size: 16px;
-    line-height: 19px;
-}
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+}*/
 
 nav.container {
     position: relative;
@@ -240,7 +241,7 @@ nav .container {
     height: 60rem;
     border-radius: 50% 22% 40% 80%;
     filter: blur(10rem);
-    background: radial-gradient(circle at 50% 50%, rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));
+    background: radial-gradient(circle at 50% 50%, #fd7e14, rgba(76, 0, 255, 0));
     opacity: 0.4;
 }
 
@@ -326,11 +327,13 @@ nav .container {
 }
 
 .btn-primary {
-    height: 100px;
+    height: 70px;
+    color: var(--primary-color);
+    text-shadow: var(--primary-color) 0 10px 20px -10px;
 }
 
 .btn-secondary {
-    height: 100px;
+    height: 70px;
 }
 
 
@@ -724,8 +727,10 @@ nav .container {
 }
 
 .inner-circle .planet1 {
-    top: 0;
+    top: 20;
     right: 0;
+    height: 30px;
+    width: 40px;
 }
 
 .inner-circle .planet2 {
@@ -736,11 +741,14 @@ nav .container {
 .inner-circle .planet3 {
     bottom: 0;
     left: 0;
+    height: 30px;
+    width: 30px;
 }
 
 .planet4 {
     bottom: 0;
     right: 0;
+    height: 30px;
 }
 
 
@@ -849,6 +857,10 @@ footer {
     gap: 5rem;
     font-size: 1.6rem;
     border-bottom: 1px solid #8451a4;
+}
+
+.container h3 {
+    margin-right: 40px;
 }
 
 .footer-row .col-2 {
